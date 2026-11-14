@@ -1,4 +1,4 @@
-section .mulbootheader
+section .mulbootheader alloc align=8
 headerstart:
 	dd 0xe85250d6
 	dd 0
