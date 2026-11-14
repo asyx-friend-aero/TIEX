@@ -2,5 +2,14 @@ global start
 section .text
 bits 32
 start:
-	mov dword [0xb8000], 0x2f4b2f4f
-	hlt 
+        mov esi, msg
+        mov edi, 0xb8000
+        mov ah, 0x2f
+.l:
+        lodsb
+        stosw
+        test al, al
+        jnz .l
+        hlt
+msg:
+        db "[ INFO ]  kernel booted sucsessfully, welcome to TIEX", 0
