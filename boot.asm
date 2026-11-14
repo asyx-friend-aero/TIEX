@@ -8,6 +8,3 @@ headerstart:
 	dw 0
 	dd 8
 headerend:
-jmp $
-times 510-($-$$) db 0
-db 0x55, 0xaa
