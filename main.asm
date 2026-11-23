@@ -12,4 +12,4 @@ start:
         jnz .l
         hlt
 msg:
-        db "[ INFO ]  kernel booted sucsessfully, welcome to TIEX", 0
+        db "[ INFO ]  kernel booted successfully", 0
